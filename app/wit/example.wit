@@ -1,0 +1,9 @@
+package my:demo;
+
+interface host {
+  hello: func(name: string) -> string;
+}
+
+world demo {
+  export host;
+}
