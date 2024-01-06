@@ -1,9 +1,14 @@
 package my:demo;
 
-interface host {
+interface foo {
   hello: func(name: string) -> string;
 }
 
+interface bar {
+  say: func(name: string);
+}
+
 world demo {
-  export host;
+  export foo;
+  import bar;
 }
